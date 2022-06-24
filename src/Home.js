@@ -7,8 +7,13 @@ const Home = () => {
 
   return (
     <div className="container">
-      {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
+      {error && <div className="alert alert-danger text-dark py-4 my-3">{error}</div>}
+      {isPending && <div>
+        <div className="spinner">
+          <div className="cube1"></div>
+          <div className="cube2"></div>
+        </div>
+      </div>}
       {blogs && <BlogList blogs={blogs} />}
     </div>
   );

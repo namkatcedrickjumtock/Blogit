@@ -1,5 +1,6 @@
 import BlogList from "./BlogList";
 import useFetch from "./api/fetchData";
+import CardsSkeletons from "./skeletons/cardsSkeletons";
 
 
 const Home = () => {
@@ -9,10 +10,16 @@ const Home = () => {
     <div className="container">
       {error && <div className="alert alert-danger text-dark py-4 my-3">{error}</div>}
       {isPending && <div>
-        <div className="spinner">
+        <CardsSkeletons />
+        <CardsSkeletons />
+        <CardsSkeletons />
+        <CardsSkeletons />
+        <CardsSkeletons />
+        <CardsSkeletons />
+        {/* <div className="spinner">
           <div className="cube1"></div>
           <div className="cube2"></div>
-        </div>
+        </div> */}
       </div>}
       {blogs && <BlogList blogs={blogs} />}
     </div>

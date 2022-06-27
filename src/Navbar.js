@@ -5,8 +5,8 @@ const Navbar = () => {
     <nav className="navbar navbar-light bg-light shadow-sm">
       <Link to="/" className="mx-2 mx-5 text-decoration-none"> <img src="../blogit.svg"  alt="logo" className="img-fluid fw-bold" />BLOGIT</Link>
       <div className="col-">
-        <Link to={'/'} className="text-decoration-none mx-1 btn btn-outline-danger">Home</Link>
-        <Link to={'/createBlog'} className="text-decoration-none mx-1 btn btn-outline-danger"> Create Blog </Link>
+        <Link to={'/'} className="text-decoration-none mx-1 btn btn-outline-danger shadow-none">Home</Link>
+        <Link to={'/createBlog'} className="text-decoration-none mx-1 btn btn-outline-danger shadow-none"> Create Blog </Link>
         <Link to={{ pathname: "https://github.com" }} target="_blank"> <i className="bi bi-github"></i></Link>
       </div>
     </nav>
